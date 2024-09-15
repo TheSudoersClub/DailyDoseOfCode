@@ -1,0 +1,26 @@
+{
+  "name": "DailyDoseOfCode",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "repository": "git@github.com:TheSudoersClub/DailyDoseOfCode.git",
+  "author": "Shriram Khandbahale <shriramskhandbahale@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node dist/app.js",
+    "build": "tsc -p .",
+    "dev": "nodemon --exec ts-node src/app.ts"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.5",
+    "@types/node": "^22.5.5",
+    "@types/nodemon": "^1.19.6",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "config": "^3.3.12",
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5"
+  }
+}
